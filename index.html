@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ANIMALIA | Clínica Veterinaria y Estetica</title>
+<meta name="description" content="Clínica veterinaria ANIMALIA: consultas, medicina preventiva felina, vacunación y estética. Urgencias 24/7.">
+
+<!-- Google Fonts: Poppins (títulos) + Open Sans (texto) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ HEADER / NAV ============ -->
+<header class="header" id="header">
+  <div class="header__inner">
+    <a href="#hero" class="logo">
+      <span class="logo__paw" aria-hidden="true">🐾</span>
+      ANIMALIA
+    </a>
+
+    <!-- Botón hamburguesa (solo visible en móvil vía CSS) -->
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+      <span class="nav-toggle__bar"></span>
+      <span class="nav-toggle__bar"></span>
+      <span class="nav-toggle__bar"></span>
+    </button>
+
+    <nav class="nav" id="navMenu">
+      <ul class="nav__list">
+        <li><a href="#servicios" class="nav__link">Servicios</a></li>
+        <li><a href="#nosotros" class="nav__link">Nosotros</a></li>
+        <li><a href="#faq" class="nav__link">Preguntas frecuentes</a></li>
+        <li><a href="#urgencias" class="nav__link nav__link--alert">Urgencias</a></li>
+        <li><a href="#contacto" class="nav__link">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero__content">
+      <p class="hero__eyebrow">Clínica veterinaria de confianza</p>
+      <h1 class="hero__title">Cuidado experto y amor para tu mejor amigo</h1>
+      <p class="hero__subtitle">
+        Atención veterinaria especializada en cada etapa de vida de tu mascota,
+        con un equipo que la trata como familia.
+      </p>
+      <div class="hero__actions">
+        <a href="#contacto" class="btn btn--primary">Agendar cita</a>
+        <a href="#urgencias" class="btn btn--alert">Urgencias 24/7</a>
+      </div>
+    </div>
+
+    <!-- REEMPLAZAR: imagen real de la clínica / mascota feliz -->
+    <div class="hero__media">
+      <img src="https://via.placeholder.com/560x480.png?text=Foto+de+mascota+feliz" alt="Mascota feliz en la clínica ANIMALIA" loading="eager">
+    </div>
+  </section>
+
+  <!-- ============ NOSOTROS (breve, ancla de nav) ============ -->
+  <section class="nosotros" id="nosotros">
+    <div class="section__inner">
+      <h2 class="section__title">Nosotros</h2>
+      <p class="section__lead">
+        Somos un equipo de médicos veterinarios apasionados por el bienestar animal,
+        con instalaciones equipadas para diagnóstico, cirugía y hospitalización.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ SERVICIOS ============ -->
+  <section class="servicios" id="servicios">
+    <div class="section__inner">
+      <h2 class="section__title">Nuestros servicios</h2>
+      <p class="section__lead">Todo lo que tu mascota necesita, bajo un mismo techo.</p>
+
+      <div class="servicios__grid">
+
+        <article class="card">
+          <div class="card__icon" aria-hidden="true">🩺</div>
+          <h3 class="card__title">Consultas generales</h3>
+          <p class="card__text">Revisión integral de salud, diagnóstico y seguimiento personalizado para tu mascota.</p>
+        </article>
+
+        <article class="card">
+          <div class="card__icon" aria-hidden="true">👨🏻‍⚕️</div>
+          <h3 class="card__title">Cirujias</h3>
+          <p class="card__text">Intervenciones cuidadosas y monitoreo constante para proteger a tu mejor amigo cuando más lo necesita.</p>
+        </article>
+
+        <article class="card">
+          <div class="card__icon" aria-hidden="true">💉</div>
+          <h3 class="card__title">Vacunación</h3>
+          <p class="card__text">Esquemas de vacunación completos para perros y gatos, desde cachorros hasta adultos.</p>
+        </article>
+
+        <article class="card">
+          <div class="card__icon" aria-hidden="true">✂️</div>
+          <h3 class="card__title">Estética</h3>
+          <p class="card__text">Baño, corte y cuidado del pelaje con productos seguros y personal capacitado.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ URGENCIAS (franja de alerta) ============ -->
+  <section class="urgencias" id="urgencias">
+    <div class="section__inner urgencias__inner">
+      <div>
+        <h2 class="urgencias__title">¿Es una urgencia?</h2>
+        <p class="urgencias__text">Contamos con atención de emergencias las 24 horas, los 365 días del año.</p>
+      </div>
+      <!-- REEMPLAZAR con número real de urgencias -->
+      <a href="tel:7441292419" class="btn btn--alert btn--large">Llamar ahora</a>
+    </div>
+  </section>
+
+  <!-- ============ FAQ (Acordeón) ============ -->
+  <section class="faq" id="faq">
+    <div class="section__inner">
+      <h2 class="section__title">Preguntas frecuentes</h2>
+
+      <div class="accordion">
+
+        <div class="accordion__item">
+          <button class="accordion__header" aria-expanded="false">
+            <span>¿Cuáles son los requisitos para la primera vacuna?</span>
+            <span class="accordion__icon" aria-hidden="true">＋</span>
+          </button>
+          <div class="accordion__panel">
+            <p>Tu mascota debe tener al menos 6-8 semanas de vida, estar libre de parásitos internos
+            (desparasitación previa) y encontrarse clínicamente sana. Te recomendamos traer su cartilla
+            si ya cuenta con una.</p>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <button class="accordion__header" aria-expanded="false">
+            <span>¿Cuál es el horario de atención?</span>
+            <span class="accordion__icon" aria-hidden="true">＋</span>
+          </button>
+          <div class="accordion__panel">
+            <p>Atendemos de lunes a viernes de 9:30 a 20:00 hrs, sábados de 10:00 a 20:00 hrs y Domingos de 11:00 a 16:00 hrs.
+            El área de urgencias opera las 24 horas, todos los días.</p>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <button class="accordion__header" aria-expanded="false">
+            <span>¿Necesito hacer cita previa?</span>
+            <span class="accordion__icon" aria-hidden="true">＋</span>
+          </button>
+          <div class="accordion__panel">
+            <p>Para consultas generales y estética recomendamos agendar cita para evitar tiempos de espera.
+            Las urgencias se atienden de inmediato, sin necesidad de cita.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ UBICACIÓN Y CONTACTO ============ -->
+  <section class="contacto" id="contacto">
+    <div class="section__inner">
+      <h2 class="section__title">Ubicación y contacto</h2>
+
+      <div class="contacto__grid">
+        <div class="contacto__info">
+          <ul class="contacto__list">
+            <li>
+              <strong>Dirección:</strong>
+              <!-- REEMPLAZAR con dirección real -->
+              Alta Sta. Cruz L. 14, Cd Renacimiento, 39715 Acapulco de Juárez, Gro.s
+            </li>
+            <li>
+              <strong>Teléfono:</strong>
+              <!-- REEMPLAZAR con teléfono real -->
+              <a href="tel:7441292419"> 7441292419</a>
+            </li>
+            <li>
+              <strong>Urgencias 24/7:</strong>
+              <!-- REEMPLAZAR con teléfono real -->
+              <a href="tel:7441292419"> 7441292419</a>
+            </li>
+            <li>
+              <strong>Correo:</strong>
+              <a href="mailto:contacto@animalia.com">contacto@animalia.com</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- PLACEHOLDER MAPA: reemplazar este div por un <iframe> de Google Maps -->
+        <!--
+          Ejemplo:
+          <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="100%"
+            style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3817.514472110953!2d-99.81809319999999!3d16.899896!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ca57df7e469aa3%3A0x38404204c0cbbdec!2sCl%C3%ADnica%20Veterinaria%20y%20Est%C3%A9tica%20Canina%20ANIMALIA!5e0!3m2!1ses!2smx!4v1786488799451!5m2!1ses!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="section__inner">
+    <p>&copy; <span id="year"></span> ANIMALIA. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<!-- ============ BOTÓN FLOTANTE DE WHATSAPP ============ -->
+<a href="https://wa.me/527441292419?text=Hola%2C%20quiero%20agendar%20una%20cita"
+   class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Agendar cita por WhatsApp">
+  <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true" fill="currentColor">
+    <path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.542.79 4.9 2.137 6.84L4.5 28.5l6.826-1.6A11.94 11.94 0 0 0 16.001 27C22.628 27 28 21.627 28 15S22.628 3 16.001 3zm6.94 16.63c-.29.82-1.44 1.5-2.36 1.69-.63.13-1.45.24-4.22-.9-3.54-1.46-5.83-5.03-6-5.26-.18-.23-1.44-1.92-1.44-3.66 0-1.74.9-2.6 1.22-2.95.29-.32.65-.4.87-.4h.63c.2 0 .48-.08.75.57.29.7.98 2.4 1.06 2.57.08.17.14.37.03.6-.11.24-.17.38-.34.58-.17.2-.36.45-.51.6-.17.17-.35.36-.15.71.2.35.9 1.48 1.93 2.4 1.33 1.18 2.44 1.55 2.79 1.72.35.17.55.15.76-.09.2-.24.87-1.02 1.1-1.37.23-.35.46-.3.77-.18.32.11 2.02.95 2.37 1.12.35.17.58.26.66.4.09.15.09.86-.2 1.68z"/>
+  </svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
